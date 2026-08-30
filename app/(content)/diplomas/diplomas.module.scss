@@ -1,0 +1,11 @@
+.card {
+    transition: all .2s;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+
+    .content{
+        background: rgba(21, 93, 252, 0.8);
+    }
+}

@@ -1,0 +1,53 @@
+.item[data-checked] {
+    span[data-slot=questionnaire-choice-indicator] {
+        background: var(--color-blue-700);
+        border-color: var(--color-blue-700);
+    }
+}
+
+.radioAnswer {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+
+        border-radius: 50%;
+    }
+
+    &.correct::after {
+        background: #00BC7D;
+    }
+
+    &.incorrect::after {
+        background: #EF4444;
+    }
+}
+
+.labels {
+    p {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            transform: translate(-150%, 10%);
+        }
+
+        &.correct::before {
+            background: #00BC7D;
+        }
+
+        &.incorrect::before {
+            background: #EF4444;
+        }
+    }
+}

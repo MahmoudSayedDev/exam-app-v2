@@ -1,0 +1,12 @@
+.card {
+    &:hover {
+        .btnStart {
+            bottom: calc(var(--spacing) * 4);
+        }
+    }
+
+    .btnStart {
+        bottom: -34px;
+        transition: all .3s ease;
+    }
+}
